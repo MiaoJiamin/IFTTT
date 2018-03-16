@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ClassDiagram>
+    <Class name="ifttt.Record_detail" x="873" y="563">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+    </Class>
+    <Class name="ifttt.Record_summary" x="556" y="501">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+    </Class>
+    <Class name="ifttt.Renamed" x="478" y="34">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Association destinationClassName="ifttt.Record_summary"
+            endpointName="summary" kind="Simple"/>
+        <Association destinationClassName="ifttt.Record_detail"
+            endpointName="detail" kind="Simple"/>
+        <Communication destinationClassName="ifttt.Record_detail"/>
+        <Communication destinationClassName="ifttt.Record_summary"/>
+    </Class>
+    <Class name="ifttt.Modified" x="213" y="36">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Association destinationClassName="ifttt.Record_summary"
+            endpointName="summary" kind="Simple"/>
+        <Association destinationClassName="ifttt.Record_detail"
+            endpointName="detail" kind="Simple"/>
+        <Communication destinationClassName="ifttt.Record_detail"/>
+        <Communication destinationClassName="ifttt.Record_summary"/>
+    </Class>
+    <Class name="ifttt.Size_changed" x="718" y="34">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Association destinationClassName="ifttt.Record_summary"
+            endpointName="summary" kind="Simple"/>
+        <Association destinationClassName="ifttt.Record_detail"
+            endpointName="detail" kind="Simple"/>
+        <Communication destinationClassName="ifttt.Record_detail"/>
+        <Communication destinationClassName="ifttt.Record_summary"/>
+    </Class>
+    <Class name="ifttt.Main" x="325" y="525">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+    </Class>
+    <Class name="ifttt.Path_changed" x="1017" y="33">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Association destinationClassName="ifttt.Record_summary"
+            endpointName="summary" kind="Simple"/>
+        <Association destinationClassName="ifttt.Record_detail"
+            endpointName="detail" kind="Simple"/>
+        <Communication destinationClassName="ifttt.Record_detail"/>
+        <Communication destinationClassName="ifttt.Record_summary"/>
+    </Class>
+</ClassDiagram>
